@@ -11,6 +11,7 @@ body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
 }
+
 /* сброс стилей */
 h1,
 h2,
@@ -18,8 +19,9 @@ h3,
 p {
   margin: 0;
 }
+
 /*для скрытия маркеров и боковых отступов*/
-.ul {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -64,8 +66,6 @@ img {
   height: auto;
 }
 
-
-
 /*логотип*/
 .logo {
   margin-right: 93px;
@@ -95,7 +95,7 @@ img {
   margin-right: 50px;
 }
 
-.site-nav-link{
+.site-nav-link {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -212,7 +212,7 @@ img {
 .feature-text {
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03
+  letter-spacing: 0.03em;
 }
 
 /*чем мы занимаемся & наша команда*/
@@ -307,7 +307,6 @@ img {
   color: var(--accent-color);
 }
 
-
 .footer-items {
   margin-bottom: 9px;
 }
@@ -334,7 +333,6 @@ img {
   letter-spacing: 0.03em;
 }
 
-
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent-color);
@@ -342,7 +340,6 @@ img {
 
 /*Portfolio*/
 /*buttons*/
-
 .btn-list {
   display: flex;
   justify-content: center;
@@ -386,7 +383,7 @@ img {
 }
 
 .photo {
-  width: calc((100%-60px) / 3);
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -405,7 +402,7 @@ img {
 
 /*галлерея фото*/
 .portfolio-items {
-  margin bottom: 4px;
+  margin-bottom: 4px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -427,4 +424,3 @@ img {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
-
