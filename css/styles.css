@@ -55,7 +55,7 @@ body {
 .main-nav {
   display: flex;
   align-items: center;
-  padding-top: 24px;
+  padding-top: 25px;
   padding-bottom: 25px;
 }
 .site-nav {
@@ -197,7 +197,7 @@ body {
 
 /*чем мы занимаемся & наша команда*/
 .work {
-  padding: 0;
+  padding-top: 0;
 }
 .section-title {
   margin-top: 0;
@@ -223,6 +223,9 @@ body {
 .box:last-child {
   margin-right: 0;
 }
+.box-img {
+  display: block;
+}
 
 /*наша команда*/
 .comand {
@@ -234,6 +237,10 @@ body {
 .icon {
   display: flex;
   flex-wrap: wrap;
+}
+.avatar {
+  display: block;
+  margin-bottom: 30px;
 }
 
 .icon-items {
@@ -249,8 +256,8 @@ body {
 }
 
 .section-avatar {
-  margin-top: 30px;
-  margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
 
   color: var(--title-text-color);
   font-weight: 500;
@@ -262,9 +269,9 @@ body {
 }
 
 .icon-text {
-  margin-top: 10px;
-  margin-bottom: 0;
-  padding-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  
 
   font-size: 16px;
   line-height: 1.19;
@@ -275,13 +282,14 @@ body {
 
 /*footer*/
 .footer {
-  display: flex;
+  display: block;
   margin: 0 auto;
   padding: 60px 0;
   background-color: var(--section-color);
 }
 
 .logo-footer {
+  display: inline-block;
   margin-bottom: 20px;
   color: var(--white-color);
   font-family: Raleway;
@@ -321,6 +329,9 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.footer-contacts:last-child {
+  margin-bottom: 0px;
+}
 
 .footer-contacts:hover,
 .footer-contacts:focus {
@@ -332,13 +343,13 @@ body {
 
 .portfolio {
   text-align: center;
-  padding-top: 0;
 }
 
 .btn-list {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
-  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .btn-items {
@@ -350,8 +361,6 @@ body {
 }
 
 .btn {
-  margin-top: 84px;
-  margin-bottom: 50px;
   padding: 6px 22px;
   border-radius: 4px;
 
@@ -379,8 +388,17 @@ body {
 }
 
 .photo {
+  width: calc((100%-60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.photo:nth-child(3n) {
+  margin-right: 0;
+}
+
+.photo:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .image {
@@ -389,10 +407,6 @@ body {
 
 .photo > .link {
   margin-bottom: 0;
-}
-
-.photo:nth-child(3n) {
-  margin-right: 0;
 }
 
 /*галлерея фото*/
@@ -422,3 +436,4 @@ body {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
+
